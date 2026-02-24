@@ -25,7 +25,15 @@ public class DataSorter {
                 System.out.println("Enter your " + size + " numbers:");
                 for (int i = 0; i < size; i++) {
                     data[i] = scanner.nextInt();
-                }                
+                }
+            } else if (choice == 2) {
+                System.out.println("Enter the size of the random dataset: ");   
+                int size = scanner.nextInt();
+                data = new int[size];
+                Random rand = new Random();
+                for (int i = 0; i < size; i++) {
+                    data[i] = rand.nextInt(1000); // 0-999 amoung random numbers will be generated
+                }             
             }
         }
     }
