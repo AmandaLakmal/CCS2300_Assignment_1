@@ -33,7 +33,14 @@ public class DataSorter {
                 Random rand = new Random();
                 for (int i = 0; i < size; i++) {
                     data[i] = rand.nextInt(1000); // 0-999 amoung random numbers will be generated
-                }             
+                }      
+                System.out.println("Successfully generated " + size + " random numbers.");   
+            } else if (choice == 3) {
+                runnig = false;
+                continue;
+                } else {
+                    System.out.println("Invalid choice. Please try again.");    
+                    continue;
             }
         }
     }
