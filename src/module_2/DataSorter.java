@@ -42,6 +42,25 @@ public class DataSorter {
                     System.out.println("Invalid choice. Please try again.");    
                     continue;
             }
+            
+            if (data != null && data.length > 0) {
+                // Show a preview of the sorted output
+                int[] sortedData = data.clone();
+                Arrays.sort(sortedData);
+                if (sortedData.length <= 20) {
+                    System.out.println("\nSorted Output: " + Arrays.toString(sortedData));
+                } else {
+                    System.out.println("\nSorted Output: [Dataset too large to print on screen, but sorting was successful]");
+                }
+
+                // Run algorithms and collect execution times
+                long bubbleTime = BubbleSort.sortAndMeasure(data);
+                long mergeTime = MergeSort.sortAndMeasure(data);
+                long quickTime = QuickSort.sortAndMeasure(data);
+
+                // Draw the comparison table
+                performanceUtils.displayComparisonTable(bubbleTime, mergeTime, quickTime);
+            }
         }
     }
 }
