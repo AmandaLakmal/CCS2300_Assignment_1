@@ -17,6 +17,16 @@ public class DataSorter {
 
             int choice = scanner.nextInt();
             int[] data = null;
+
+            if (choice == 1) {
+                System.out.println("How many numbers do you want to enter?");
+                int size = scanner.nextInt();
+                data = new int[size];
+                System.out.println("Enter your " + size + " numbers:");
+                for (int i = 0; i < size; i++) {
+                    data[i] = scanner.nextInt();
+                }                
+            }
         }
     }
 }
