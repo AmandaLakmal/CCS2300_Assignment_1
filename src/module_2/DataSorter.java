@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class DataSorter {
     public void runModule(){
         Scanner scanner = new Scanner(System.in);
-        boolean runnig = true;
+        boolean running = true;
 
-        while(runnig){
+        while(running){
             System.out.println("\n=== Module 2: Sorting Algorithm Comparison Tool ===");
             System.out.println("1. Enter number manually");
             System.out.println("2. Generate random numbers");
@@ -36,7 +36,7 @@ public class DataSorter {
                 }      
                 System.out.println("Successfully generated " + size + " random numbers.");   
             } else if (choice == 3) {
-                runnig = false;
+                running = false;
                 continue;
                 } else {
                     System.out.println("Invalid choice. Please try again.");    
