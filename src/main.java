@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Initialize your Module 3 components
+        // Initialize Module 3 components
         LocationBST locationTree = new LocationBST();
         PerformanceAnalyzer analyzer = new PerformanceAnalyzer();
         boolean running = true;
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("   Smart City & Sorting Data App (Assignment 1)   ");
         System.out.println("==================================================");
 
-        // The Menu-Driven Interface
+        // The Menu driven interface
         while (running) {
             System.out.println("\n--- Main Menu ---");
             System.out.println("1. Test Location Tree (BST)");
@@ -28,7 +28,7 @@ public class Main {
             switch (choice) {
                 case 1:
                     System.out.println("\n-- Testing Location BST --");
-                    // Hardcoding some test data to prove your tree works
+                    // Hardcoding some test data to prove tree works
                     locationTree.insert(102, "Kandy");
                     locationTree.insert(101, "Colombo");
                     locationTree.insert(103, "Galle");
@@ -36,7 +36,7 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("\n-- Running Performance Analyzer --");
-                    // Runs your binary search timer and prints the table
+                    // Runs binary search timer and prints the table
                     analyzer.analyzeSearchPerformance();
                     break;
                 case 3:
