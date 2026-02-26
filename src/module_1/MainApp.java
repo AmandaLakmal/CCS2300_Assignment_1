@@ -1,7 +1,5 @@
 package Module_1;
 
-import Module_1.Graph;
-import Module_1.LocationBST;
 import java.util.Scanner;
 
 /*
