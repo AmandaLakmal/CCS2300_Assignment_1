@@ -1,3 +1,5 @@
+package Module_1;
+
 class LocationNode {
     String name;
     LocationNode left, right;
