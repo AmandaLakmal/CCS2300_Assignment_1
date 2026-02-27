@@ -18,3 +18,18 @@ public class LocationBST {
 
         return root;
     }
+
+    public void displayInOrder() {
+        System.out.println("Locations (Sorted):");
+        inorder(root);
+        System.out.println();
+    }
+
+    private void inorder(LocationNode root) {
+        if (root != null) {
+            inorder(root.left);
+            System.out.print(root.locationName + " ");
+            inorder(root.right);
+        }
+    }
+}
