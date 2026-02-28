@@ -47,7 +47,7 @@ public class DataSorter {
                 // Show a preview of the sorted output
                 int[] sortedData = data.clone();
                 Arrays.sort(sortedData);
-                if (sortedData.length <= 20) {
+                if (sortedData.length <= 1000) {
                     System.out.println("\nSorted Output: " + Arrays.toString(sortedData));
                 } else {
                     System.out.println("\nSorted Output: [Dataset too large to print on screen, but sorting was successful]");
